@@ -1,0 +1,61 @@
+@font-face {
+  font-family: YekanBakh;
+  src: url("/fonts/YekanBakhMedium.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "YekanBakh";
+}
+:root {
+  --blur-bg: #e1f4f5;
+  --black: #333;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  background: var(--blur-bg);
+  font-family: "YekanBakh";
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+button {
+  border: 0;
+}
+img {
+  -webkit-user-drag: none;
+}
+.btn {
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #0f355b 0%, #05cdff 100%, #1671b9 100%)
+  );
+}
+.btn > a {
+  color: #fff;
+}
+
+.flex-hz {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-vr {
+  display: flex;
+  flex-direction: column;
+}
