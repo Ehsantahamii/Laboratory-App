@@ -367,6 +367,90 @@ section.about-us {
 .about-us .about-us-side ul.about-features-list li.feature img {
   margin-left: 0.6rem;
 }
+
+/* our team styles */
+
+section.our-team {
+}
+.our-team .our-team-header {
+  justify-content: space-evenly;
+  width: 90dvw;
+  margin: auto;
+}
+.our-team .our-team-header h2 {
+  width: auto;
+}
+
+.our-team .our-team-header img {
+  width: 75%;
+}
+
+.our-team .our-team-header a {
+  width: auto;
+  gap: 0.6rem;
+}
+
+.our-team ul.our-team-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90dvw;
+  margin: 3rem auto;
+}
+
+.our-team ul.our-team-container > img:nth-child(1) {
+  position: absolute;
+  top: -2rem;
+  animation: rotating360 20s infinite linear;
+  -webkit-animation: rotating360 20s infinite linear;
+}
+.our-team ul.our-team-container > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: movingY 6s infinite linear;
+  -webkit-animation: movingY 6s infinite linear;
+}
+.our-team ul.our-team-container > img:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation: rotating360 20s infinite linear;
+  -webkit-animation: rotating360 20s infinite linear;
+}
+.our-team ul.our-team-container > img:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation: rotating30 6s infinite linear;
+  -webkit-animation: rotating30 6s infinite linear;
+}
+
+.our-team ul.our-team-container li.team-member {
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: end;
+  padding: 0 0 1rem 0;
+  gap: 3.12rem;
+}
+.our-team ul.our-team-container li.team-member h3 {
+  margin-bottom: 1.25rem;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.our-team ul.our-team-container li.team-member p {
+  margin-bottom: 4.25rem;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.our-team ul.our-team-container li.team-member button {
+  padding: 0.81rem 1.87rem;
+}
+
 @keyframes movingX {
   50% {
     transform: translateX(20px);
