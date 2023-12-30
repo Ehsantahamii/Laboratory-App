@@ -489,6 +489,41 @@ section.blog {
   float: left;
 }
 
+/* footer styles */
+
+footer.footer {
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.footer .footer-side {
+  max-width: 33.333%;
+  flex: 0 0 33.333%;
+  padding: 4.87rem 2rem;
+}
+.footer .footer-side h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer .footer-side-1 .enamad-box{
+  margin-top: 7.68rem;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.footer .footer-side-2 > li,
+.footer .footer-side-3 > li {
+  margin: 1.87rem 0;
+}
+.footer .footer-side-3 > li {
+  align-items: end;
+}
+.footer .footer-side-3 > li > img {
+  margin-left: 0.6rem;
+}
 @keyframes movingX {
   50% {
     transform: translateX(20px);

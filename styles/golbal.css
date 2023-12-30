@@ -50,6 +50,9 @@ img {
 p {
   font-size: 1rem;
 }
+address {
+  all: unset;
+}
 .btn {
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
   border-radius: 20px;
