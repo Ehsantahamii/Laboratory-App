@@ -303,9 +303,70 @@ section.reputation {
 }
 .reputation .reputation-container .reputation-box {
   width: 50%;
+  max-width: 32.3rem; /* 552px */
+
   gap: 1.5rem;
 }
 
+/* reservation styles */
+section.reservation {
+  background: #fff;
+  width: 96dvw;
+  margin: auto;
+  text-align: center;
+}
+.reservation h2 {
+  max-width: 53.8rem;
+  margin: auto;
+  padding: 3rem 0 0 0;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.reservation-container {
+  background: #fff;
+}
+.reservation .reservation-btn {
+  color: #fff;
+  width: 19.6rem;
+  height: 3.1rem;
+  margin: 4.3rem auto;
+}
+
+/* about-us styles */
+
+section.about-us {
+  width: 85dvw;
+  max-width: 90rem;
+  margin: 5.6rem auto;
+}
+.about-us .about-us-side {
+  width: 50%;
+}
+.about-us .about-us-side:first-child {
+  padding-left: 1rem;
+}
+.about-us .about-us-side:first-child button {
+  padding: 0.8rem 1rem;
+  margin: 1.8rem 0;
+}
+.about-us .about-us-side p {
+  padding: 0.6rem 0;
+  text-align: justify;
+}
+.about-us .about-us-side ul.about-features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-us .about-us-side ul.about-features-list li.feature {
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: end;
+  padding: 0 0 1rem 0;
+}
+.about-us .about-us-side ul.about-features-list li.feature img {
+  margin-left: 0.6rem;
+}
 @keyframes movingX {
   50% {
     transform: translateX(20px);
