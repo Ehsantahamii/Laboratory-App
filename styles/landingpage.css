@@ -94,18 +94,17 @@ header.header-container {
   max-width: 1440px;
   margin: 3rem auto;
 }
-header.header-container .header-side {
+.header-container .header-side {
   position: relative;
   width: 50%;
 }
-header.header-container .header-side:nth-child(2) {
+.header-container .header-side:nth-child(2) {
   text-align: center;
 }
-
-header.header-container .header-side:nth-child(1) {
+.header-container .header-side:nth-child(1) {
   padding-left: 15px;
 }
-header.header-container .header-side:nth-child(1) h1 {
+.header-container .header-side:nth-child(1) h1 {
   color: var(--black);
   text-align: right;
   font-size: 40px;
@@ -113,7 +112,7 @@ header.header-container .header-side:nth-child(1) h1 {
   font-weight: 700;
   line-height: normal;
 }
-header.header-container .header-side:nth-child(1) p {
+.header-container .header-side:nth-child(1) p {
   margin-top: 0.6rem;
   color: #3f3f3f;
   text-align: justify;
@@ -122,25 +121,25 @@ header.header-container .header-side:nth-child(1) p {
   font-weight: 400;
   line-height: normal;
 }
-header.header-container .header-side:nth-child(1) button {
+.header-container .header-side:nth-child(1) button {
   padding: 13px 30px;
   margin: 30px 0;
 }
-header.header-container .header-side:nth-child(1) img:nth-child(1) {
+.header-container .header-side:nth-child(1) img:nth-child(1) {
   position: absolute;
   top: -9rem;
   right: -3rem;
   animation: rotating360 20s infinite linear;
   -webkit-animation: rotating360 20s infinite linear;
 }
-header.header-container .header-side:nth-child(1) img:nth-child(2) {
+.header-container .header-side:nth-child(1) img:nth-child(2) {
   position: absolute;
   top: -4rem;
   right: 0;
   animation: movingX 6s infinite linear;
   -webkit-animation: movingX 6s infinite linear;
 }
-header.header-container .header-side:nth-child(1) img:nth-child(3) {
+.header-container .header-side:nth-child(1) img:nth-child(3) {
   position: absolute;
   bottom: -4rem;
   right: 3rem;
@@ -152,28 +151,28 @@ header.header-container .header-side:nth-child(1) img:nth-child(3) {
   animation: rotating30 2s infinite linear;
   -webkit-animation: rotating30 6s infinite linear;
 }
-header.header-container .header-side:nth-child(1) img:nth-child(4) {
+.header-container .header-side:nth-child(1) img:nth-child(4) {
   position: absolute;
   bottom: -4rem;
   right: -3rem;
   animation: rotating360 20s infinite linear;
   -webkit-animation: rotating360 20s infinite linear;
 }
-header.header-container .header-side:nth-child(2) img:nth-child(1) {
+.header-container .header-side:nth-child(2) img:nth-child(1) {
   position: absolute;
   top: -2rem;
   right: 50%;
   animation: movingY 6s infinite linear;
   -webkit-animation: movingY 6s infinite linear;
 }
-header.header-container .header-side:nth-child(2) img:nth-child(2) {
+.header-container .header-side:nth-child(2) img:nth-child(2) {
   position: absolute;
   top: -4rem;
   right: 8rem;
   animation: rotating360 20s infinite linear;
   -webkit-animation: rotating360 20s infinite linear;
 }
-header.header-container .header-side:nth-child(2) img:nth-child(3) {
+.header-container .header-side:nth-child(2) img:nth-child(3) {
   position: absolute;
   bottom: -2rem;
   left: 0;
@@ -192,6 +191,7 @@ section.info-boxes {
   width: 21.8rem;
   height: 17.8rem;
   padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   text-align: center;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -229,6 +229,8 @@ section.services {
   width: 21.8rem;
   height: 17.8rem;
   padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -371,6 +373,7 @@ section.about-us {
 /* our team styles */
 
 section.our-team {
+  margin: 3rem auto;
 }
 .our-team .our-team-header {
   justify-content: space-evenly;
@@ -449,6 +452,41 @@ section.our-team {
 }
 .our-team ul.our-team-container li.team-member button {
   padding: 0.81rem 1.87rem;
+}
+
+/* blog styles */
+section.blog {
+  margin: 3rem auto;
+  text-align: center;
+}
+.blog > h2 {
+  margin: 4.37rem auto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.blog .blog-container {
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+}
+.blog .blog-container article.article {
+  max-width: 23.43rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1rem;
+}
+.blog .blog-container article.article > img {
+  width: 100%;
+}
+
+.blog .blog-container article.article > p {
+  text-align: justify;
+}
+.blog .blog-container article.article > a {
+  text-align: left;
+  float: left;
 }
 
 @keyframes movingX {
