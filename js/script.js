@@ -1,4 +1,14 @@
-window.addEventListener("scroll", function () {
-  const nav = document.querySelector("nav.nav");
-  nav.classList.toggle("nav-animate", window.scrollY > 0);
+$(function () {
+  var shrinkHeader = 70;
+  $(window).scroll(function () {
+    var scroll = getCurrentScroll();
+    if (scroll >= shrinkHeader) {
+      $(".nav-container").addClass("nav-animate");
+    } else {
+      $(".nav-container").removeClass("nav-animate");
+    }
+  });
+  function getCurrentScroll() {
+    return window.scrollY || document.documentElement.scrollTop;
+  }
 });
