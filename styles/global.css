@@ -20,6 +20,10 @@ body {
   background: var(--blur-bg);
   font-family: "YekanBakh";
 }
+section,
+header,nav {
+  max-width: 1280px;
+}
 ul {
   list-style: none;
 }
@@ -48,6 +52,7 @@ img {
   max-width: 100%;
 }
 p {
+  color: var(--black);
   font-size: 1rem;
 }
 address {
@@ -67,6 +72,9 @@ address {
 }
 .btn > a {
   color: #fff;
+}
+.btn:hover.btn > a {
+  color: #1671b9;
 }
 
 .flex-hz {
