@@ -10,7 +10,8 @@
   font-family: "YekanBakh";
 }
 :root {
-  --blur-bg: #e1f4f5;
+  --blur-bg: #fff;
+  /* --blur-bg: #e1f4f5; */
   --black: #333;
 }
 html {
@@ -19,6 +20,8 @@ html {
 body {
   background: var(--blur-bg);
   font-family: "YekanBakh";
+  overflow-x: hidden;
+  max-width: 100%;
 }
 section,
 header {
@@ -45,7 +48,9 @@ h2 {
   line-height: normal;
 }
 button {
+  cursor: pointer;
   border: 0;
+  background: none;
 }
 img {
   -webkit-user-drag: none;
@@ -85,4 +90,12 @@ address {
 .flex-vr {
   display: flex;
   flex-direction: column;
+}
+.open {
+  display: block;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
 }

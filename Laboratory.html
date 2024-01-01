@@ -6,9 +6,10 @@
     <title>آزمایشگاه دکتر نصرالله صالح گوهری</title>
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/landingpage.css" />
+    <link rel="stylesheet" href="/styles/landingpage__tablet.css" />
   </head>
   <body>
-    <!----------- navbar start----------->
+    <!----------- navbar laptop start----------->
     <nav class="nav-container">
       <div class="navbar">
         <div class="logo">
@@ -56,11 +57,51 @@
             <a href="#">مطالب پزشکی</a>
           </li>
         </ul>
+        <button id="menu-btn" class="hamburger-menu-btn" title="منو">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="25"
+            viewBox="0 0 30 25"
+            fill="none"
+          >
+            <path
+              d="M30 23.2232C30 24.2054 29.331 25 28.5075 25H16.4925C16.0967 25 15.717 24.8128 15.4371 24.4796C15.1572 24.1464 15 23.6944 15 23.2232C15 22.752 15.1572 22.3 15.4371 21.9668C15.717 21.6336 16.0967 21.4464 16.4925 21.4464H28.5075C29.3325 21.4464 30 22.2411 30 23.2232ZM30 12.5C30 13.4821 29.331 14.2768 28.5075 14.2768H1.4925C1.09666 14.2768 0.717041 14.0896 0.437143 13.7564C0.157245 13.4232 0 12.9712 0 12.5C0 12.0288 0.157245 11.5768 0.437143 11.2436C0.717041 10.9104 1.09666 10.7232 1.4925 10.7232H28.5075C29.3325 10.7232 30 11.5196 30 12.5ZM28.5075 3.55357C28.9033 3.55357 29.283 3.36637 29.5629 3.03316C29.8428 2.69995 30 2.24802 30 1.77679C30 1.30555 29.8428 0.85362 29.5629 0.520408C29.283 0.187196 28.9033 1.40438e-08 28.5075 0H10.4925C10.2965 -6.9538e-09 10.1024 0.0459579 9.92134 0.13525C9.74027 0.224542 9.57573 0.355418 9.43714 0.520408C9.29855 0.685398 9.18861 0.88127 9.11361 1.09684C9.0386 1.31241 9 1.54345 9 1.77679C9 2.01012 9.0386 2.24116 9.11361 2.45673C9.18861 2.6723 9.29855 2.86817 9.43714 3.03316C9.57573 3.19815 9.74027 3.32903 9.92134 3.41832C10.1024 3.50761 10.2965 3.55357 10.4925 3.55357H28.5075Z"
+              fill="#333333"
+            />
+          </svg>
+        </button>
         <button class="login-btn btn" type="button">
           <a href="/">دریافت نتیجه/ورود</a>
         </button>
       </div>
     </nav>
+    <!----------- navbar mobile start----------->
+    <div id="mobile-nav" class="nav-container-mobile">
+      <button id="closeMenu" style="z-index: 999999" title="بستن">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="29"
+          viewBox="0 0 36 29"
+          fill="none"
+        >
+          <path
+            d="M3 2.44857L32.3733 26.6494"
+            stroke="#333333"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <path
+            d="M33 2L3.62673 26.2008"
+            stroke="#333333"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
+
     <!----------- header start ----------->
     <header class="header-container flex-hz">
       <div class="header-side">
@@ -468,7 +509,7 @@
         </article>
       </div>
     </section>
-    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
   <!----------- footer start ----------->

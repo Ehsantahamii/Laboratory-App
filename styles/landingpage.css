@@ -1,10 +1,11 @@
 nav {
-  width: 110%;
+  width: 100%;
   background: var(--blur-bg);
   z-index: 9999;
   position: fixed;
   left: 50%;
-  top: 15px;
+  top: 0px;
+  padding: 1rem 0 0 0;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -86,6 +87,9 @@ nav {
   color: #fff;
   padding: 9px 15px;
 }
+.hamburger-menu-btn {
+  display: none;
+}
 
 /* navbar dropdown styles */
 ul.guid-dropdown {
@@ -133,7 +137,6 @@ header.header-container {
 }
 .header-container .header-side:nth-child(1) h1 {
   max-width: 31rem;
-  color: var(--black);
   text-align: right;
   font-size: 40px;
   font-style: normal;
@@ -558,6 +561,54 @@ footer.footer {
 .footer .footer-side-3 > li > img {
   margin-left: 0.6rem;
 }
+
+@media screen and (max-width: 1280px) {
+  .navbar {
+    max-width: 1024px;
+    justify-content: space-around;
+  }
+  header.header-container {
+    margin: 11.3rem auto 6rem auto;
+  }
+  .info-boxes div.info-box-item {
+    width: 19.8rem;
+  }
+  .reservation-container > div > img {
+    max-width: 30vw;
+  }
+  .our-team .our-team-header img {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .info-boxes div.info-box-item {
+    width: 18.8rem;
+  }
+  .info-boxes div.info-box-item > img {
+    width: 5.3rem;
+  }
+  .our-team .our-team-header img {
+    max-width: 70%;
+  }
+  .our-team ul.our-team-container > img:nth-child(2) {
+    top: -2rem;
+  }
+  .our-team ul.our-team-container > img:nth-child(3) {
+    top: 70%;
+  }
+  .our-team .team-member > img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .our-team ul.our-team-container li.team-member h3 {
+    margin: 0;
+  }
+  .blog .blog-container {
+    max-width: 95vw;
+    margin: auto;
+  }
+}
+
 @keyframes movingX {
   50% {
     transform: translateX(20px);
