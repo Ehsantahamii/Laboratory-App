@@ -364,6 +364,9 @@ section.reservation {
 .reservation-container {
   background: #fff;
 }
+.reservation-container > div > img:nth-child(3) {
+  display: none;
+}
 .reservation .reservation-btn {
   color: #fff;
   width: 19.6rem;

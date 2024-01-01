@@ -5,6 +5,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1rem !important;
+  }
+  h3 {
+    font-size: 0.87rem !important;
+  }
   .nav-container-mobile {
     background: var(--blur-bg);
     inset: 0;
@@ -16,7 +22,7 @@
   }
   /* class to open menu */
   .open {
-    display: block;
+    display: flex;
     transition: 0.4s ease;
     -webkit-transition: 0.4s ease;
     -moz-transition: 0.4s ease;
@@ -68,7 +74,7 @@
   /* info-boxes styles */
   section.info-boxes {
     flex-direction: column;
-    gap: 10px;
+    gap: 1.87rem;
   }
   .info-boxes div.info-box-item {
     width: 21.8rem;
@@ -82,11 +88,93 @@
   .services .services-side {
     width: 80%;
   }
+  .services .services-side .service-box {
+    max-width: 85vw;
+  }
 
   /* reputation styles */
   .reputation .reputation-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .reputation .reputation-container .reputation-box {
+    width: 95%;
+  }
+  .reputation .reputation-container:nth-child(4) {
+    margin: 0;
+  }
+  /* reservation styles */
+  .reservation-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.2rem auto;
+  }
+  .reservation .reservation-btn {
+    width: 75%;
+    max-width: 19.6rem;
+    margin: 1rem auto;
+  }
+  .reservation-container > div > img:nth-child(3) {
+    display: block;
+  }
+  .reservation-container > div > img:nth-child(2) {
+    display: none;
+  }
+  /* about-us styles */
+  section.about-us {
+    flex-direction: column-reverse;
+  }
+  .about-us .about-us-side {
+    width: 80%;
+    text-align: center;
+  }
+  .about-us .about-us-side > p {
+    text-align: center;
+  }
+  .about-us .about-us-side ul.about-features-list {
+    margin: 1rem auto;
+  }
+  /* our-team styles */
+  .our-team .our-team-header h2,
+  .our-team .our-team-header a {
+    font-size: 0.87rem;
+  }
+  .our-team .our-team-header img {
+    max-width: 42%;
+  }
+
+  .our-team ul.our-team-container li.team-member {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .our-team ul.our-team-container li.team-member > img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .our-team ul.our-team-container li.team-member p {
+    margin-bottom: 1.25rem;
+  }
+
+  /* blog styles */
+  .blog .blog-container {
+    flex-direction: column;
+  }
+
+  /* footer styles */
+  footer.footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer .footer-side {
+    max-width: 95%;
+    flex: 0 0 95%;
+    padding: 1rem 1rem;
+  }
+  .footer .footer-side-1 .enamad-box {
+    margin-top: 2rem;
+    justify-content: center;
   }
 }

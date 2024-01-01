@@ -20,12 +20,13 @@ html {
 body {
   background: var(--blur-bg);
   font-family: "YekanBakh";
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   max-width: 100%;
 }
 section,
 header {
   max-width: 1280px;
+  /* overflow-x: hidden; */
 }
 ul {
   list-style: none;
