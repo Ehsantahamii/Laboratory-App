@@ -20,8 +20,9 @@ html {
 body {
   background: var(--blur-bg);
   font-family: "YekanBakh";
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   max-width: 100%;
+  scroll-behavior: smooth !important;
 }
 section,
 header {
@@ -64,6 +65,10 @@ p {
 address {
   all: unset;
 }
+.dark-active {
+  background: #3f3f3f !important;
+  color: #fff !important;
+}
 .btn {
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
   border-radius: 20px;
@@ -99,4 +104,10 @@ address {
   -moz-transition: 0.4s ease;
   -ms-transition: 0.4s ease;
   -o-transition: 0.4s ease;
+}
+
+.go-top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }

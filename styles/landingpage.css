@@ -11,17 +11,12 @@ nav {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
 }
 .navbar {
   max-width: 1280px;
   margin: auto;
   margin-top: 4.3rem;
-  padding: 0 0 0.62rem 0;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +84,36 @@ nav {
 }
 .hamburger-menu-btn {
   display: none;
+}
+.nav-container-mobile {
+  display: none;
+}
+.dark-night-mode {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 9px 9px 18px #c7c7c7, -9px -9px 18px #f9f9f9;
+}
+.dark-night-mode > img {
+  padding: 1rem 1rem 1rem 1rem;
+}
+.dark-night-mode img {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+.dark-night-mode > img:nth-child(2) {
+  visibility: unset;
+}
+
+.active-mode {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 /* navbar dropdown styles */
@@ -347,7 +372,6 @@ section.reputation {
 
 /* reservation styles */
 section.reservation {
-  background: #fff;
   width: 100%;
   max-width: 100%;
   margin: auto;
@@ -362,7 +386,6 @@ section.reservation {
   font-weight: 700;
 }
 .reservation-container {
-  background: #fff;
 }
 .reservation-container > div > img:nth-child(3) {
   display: none;
@@ -536,6 +559,9 @@ footer.footer {
   align-items: flex-start;
   flex-wrap: wrap;
   background: #fff;
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.25),
+    0px 2px 8px 0px rgba(0, 0, 0, 0.25),
+    0px 0px 0px 1px rgba(255, 255, 255, 0.1) inset;
 }
 .footer .footer-side {
   max-width: 33.333%;

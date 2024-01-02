@@ -12,23 +12,32 @@
     font-size: 0.87rem !important;
   }
   .nav-container-mobile {
+    visibility: hidden;
+    opacity: 0;
     background: var(--blur-bg);
     inset: 0;
     z-index: 99999;
     position: fixed;
     width: 100dvw;
     height: 100%;
-    display: none;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+
   }
   /* class to open menu */
   .open {
-    display: flex;
-    transition: 0.4s ease;
-    -webkit-transition: 0.4s ease;
-    -moz-transition: 0.4s ease;
-    -ms-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-  }
+    visibility: visible;
+    opacity: 1;
+    display: flex !important;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
 
   .navbar {
     max-width: 85vw;
