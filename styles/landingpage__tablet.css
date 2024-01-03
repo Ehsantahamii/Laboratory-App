@@ -25,7 +25,6 @@
     -moz-transition: all 0.6s ease;
     -ms-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
-
   }
   /* class to open menu */
   .open {
@@ -37,7 +36,7 @@
     -moz-transition: all 0.6s ease;
     -ms-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
-}
+  }
 
   .navbar {
     max-width: 85vw;
@@ -79,6 +78,23 @@
   .header-container .header-side:nth-child(1) > p {
     text-align: center;
   }
+  .header-container .header-side:nth-child(2) img:nth-child(1),
+  .header-container .header-side:nth-child(1) img:nth-child(2) {
+    width: 2.5rem;
+    height: 1.68rem;
+  }
+  .header-container .header-side:nth-child(2) img:nth-child(2),
+  .header-container .header-side:nth-child(2) img:nth-child(3),
+  .header-container .header-side:nth-child(1) img:nth-child(1),
+  .header-container .header-side:nth-child(1) img:nth-child(4) {
+    width: 3.7rem;
+    height: 2.6rem;
+  }
+  .header-container .header-side:nth-child(1) img:nth-child(3) {
+    width: 2.6rem;
+    height: 3.7rem;
+    right: 0;
+  }
 
   /* info-boxes styles */
   section.info-boxes {
@@ -109,10 +125,36 @@
   }
   .reputation .reputation-container .reputation-box {
     width: 95%;
+    margin-top: 1rem;
+  }
+  .reputation .reputation-container .reputation-box > img {
+    width: 3.25rem;
   }
   .reputation .reputation-container:nth-child(4) {
-    margin: 0;
+    margin-top: 0.5rem;
   }
+  .reputation .reputation-container:nth-child(4) .reputation-box {
+    margin: inherit;
+  }
+  .reputation img:nth-child(5) {
+    top: 4rem;
+    width: 2.5rem;
+    height: 1.68rem;
+  }
+  .reputation img:nth-child(6) {
+    width: 3.7rem;
+    height: 2.6rem;
+  }
+  .reputation img:nth-child(7) {
+    bottom: -5.7rem;
+    width: 3.7rem;
+    height: 2.6rem;
+  }
+  .reputation img:nth-child(8) {
+    width: 2.6rem;
+    height: 3.7rem;
+  }
+
   /* reservation styles */
   .reservation-container > div {
     display: flex;
@@ -150,6 +192,9 @@
   .our-team .our-team-header a {
     font-size: 0.87rem;
   }
+  .our-team ul.our-team-container {
+    max-width: 768px;
+  }
   .our-team .our-team-header img {
     max-width: 42%;
   }
@@ -157,13 +202,31 @@
   .our-team ul.our-team-container li.team-member {
     max-width: 100%;
     flex: 0 0 100%;
+    justify-content: center;
+  }
+  .our-team ul.our-team-container li.team-member {
+    width: 50%;
   }
   .our-team ul.our-team-container li.team-member > img {
+    width: 50%;
     max-width: 150px;
     max-height: 150px;
   }
   .our-team ul.our-team-container li.team-member p {
     margin-bottom: 1.25rem;
+  }
+  .our-team ul.our-team-container > img:nth-child(1),
+  .our-team ul.our-team-container > img:nth-child(3) {
+    width: 3.7rem;
+    height: 2.6rem;
+  }
+  .our-team ul.our-team-container > img:nth-child(2) {
+    width: 2.5rem;
+    height: 1.68rem;
+  }
+  .our-team ul.our-team-container > img:nth-child(4) {
+    width: 2.6rem;
+    height: 3.7rem;
   }
 
   /* blog styles */
@@ -185,5 +248,17 @@
   .footer .footer-side-1 .enamad-box {
     margin-top: 2rem;
     justify-content: center;
+  }
+}
+@media (orientation: landscape) {
+  nav.nav-container {
+    width: 100vw !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section{
+    max-width: 95vw;
+    overflow: hidden;
   }
 }
