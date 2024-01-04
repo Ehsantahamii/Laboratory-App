@@ -10,15 +10,15 @@
   font-family: "YekanBakh";
 }
 :root {
-  --blur-bg: #fff;
-  /* --blur-bg: #e1f4f5; */
+  --white-bg: #fff;
+  --light-blue-bg: #e1f4f5;
   --black: #333;
 }
 html {
   scroll-behavior: smooth !important;
 }
 body {
-  background: var(--blur-bg);
+  background: var(--light-blue-bg);
   font-family: "YekanBakh";
   overflow-x: hidden;
   max-width: 100%;

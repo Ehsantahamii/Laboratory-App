@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  background: var(--blur-bg);
+  background: var(--light-blue-bg);
   z-index: 9999;
   position: fixed;
   left: 50%;
@@ -372,6 +372,7 @@ section.reputation {
 
 /* reservation styles */
 section.reservation {
+  background: var(--white-bg);
   width: 100%;
   max-width: 100%;
   margin: auto;
