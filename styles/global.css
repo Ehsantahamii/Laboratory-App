@@ -42,6 +42,7 @@ h4,
 h5,
 h6 {
   color: var(--black);
+  text-decoration: none;
 }
 h2 {
   font-size: 32px;
@@ -99,13 +100,12 @@ address {
 }
 .open {
   display: block;
-  transition: 0.4s ease;
-  -webkit-transition: 0.4s ease;
-  -moz-transition: 0.4s ease;
-  -ms-transition: 0.4s ease;
-  -o-transition: 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
 }
-
 .go-top-btn {
   position: fixed;
   bottom: 1rem;

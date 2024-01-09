@@ -42,3 +42,10 @@ $("#light-btn").click(function () {
 $("#go-top").click(function scrollToTop() {
   $(window).scrollTop(0);
 });
+
+// accordion
+
+$("#guid-accordion").click(function () {
+  $(".navbar-guid-accordions").toggleClass("accordions-open");
+  $("#guid-accordion img").toggleClass("rotate270");
+});

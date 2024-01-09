@@ -386,8 +386,6 @@ section.reservation {
   font-style: normal;
   font-weight: 700;
 }
-.reservation-container {
-}
 .reservation-container > div > img:nth-child(3) {
   display: none;
 }

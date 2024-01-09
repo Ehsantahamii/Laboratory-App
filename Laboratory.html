@@ -93,11 +93,9 @@
     <div id="mobile-nav" class="nav-container-mobile flex-vr">
       <div class="">
         <button id="closeMenu" style="z-index: 999999" title="بستن">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
-          
-        
         </button>
       </div>
       <ul class="nav-item-list flex-vr">
@@ -107,20 +105,20 @@
         <li class="nav-item">
           <a href="#">آزمایش ها</a>
         </li>
-        <li class="nav-item">
-          <a href="#">راهنمای بیماران</a>
+        <li id="guid-accordion" class="nav-item flex-hz">
+          <p style="cursor: pointer;">راهنمای بیماران</p>
           <img
-            class="arrow-vector"
+            class="guid-accordion-vector"
             src="/images/arrow vector.svg"
             alt="arrow-vector"
           />
-          <ul class="navbar-guid-accordions flex-vr">
-            <li>شرایط هر آزمایش</li>
-            <li>نوبت دهی آنلاین</li>
-            <li>بیمه ها</li>
-            <li>دریافت آنلاین نتیجه</li>
-          </ul>
         </li>
+        <ul class="navbar-guid-accordions flex-vr">
+          <li>شرایط هر آزمایش</li>
+          <li>نوبت دهی آنلاین</li>
+          <li>بیمه ها</li>
+          <li>دریافت آنلاین نتیجه</li>
+        </ul>
         <li class="nav-item">
           <a href="#">خدمات</a>
         </li>
