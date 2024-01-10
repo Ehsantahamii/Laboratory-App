@@ -57,23 +57,25 @@
   .navbar ul.navbar-container {
     display: none;
   }
-  .nav-item-list:not(.navbar-guid-accordions) {
+  .nav-item-list {
     margin: auto;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+  }
+  .nav-item-list .nav-item {
+    margin: 1.25rem 0;
+    font-weight: 600;
   }
   .navbar-guid-accordions {
     position: relative;
     height: 0;
-    padding: 0;
+    gap: 0;
     overflow: hidden;
-    gap: 0.6rem;
-    transition: 0.5s all ease-out;
-    -webkit-transition: 0.5s all ease-out;
-    -moz-transition: 0.5s all ease-out;
-    -ms-transition: 0.5s all ease-out;
-    -o-transition: 0.5s all ease-out;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
   }
   .guid-accordion-vector {
     rotate: 0deg;
@@ -96,7 +98,7 @@
     overflow: initial;
     height: unset;
     margin: 0.5rem auto;
-    padding: 1rem;
+    gap: 0.6rem;
     transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -258,6 +260,10 @@
   .our-team ul.our-team-container li.team-member p {
     margin-bottom: 1.25rem;
   }
+  .our-team ul.our-team-container li.team-member button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
   .our-team ul.our-team-container > img:nth-child(1),
   .our-team ul.our-team-container > img:nth-child(3) {
     width: 3.7rem;
@@ -308,13 +314,45 @@
 
 @keyframes scaleIn {
   0% {
-    transform: scaleX(2);
-    transform-origin: 0% 0%;
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: scale(7);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: scale(1.5);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: scale(1.24);
+  }
+
+  89% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: scale(1.04);
   }
 
   100% {
-    transform: scaleX(1);
-    transform-origin: 0% 0%;
+    animation-timing-function: ease-out;
+    transform: scale(1);
   }
 }
 @keyframes scaleOut {
