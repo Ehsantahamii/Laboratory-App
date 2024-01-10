@@ -89,16 +89,17 @@ nav {
   display: none;
 }
 .dark-night-mode {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   position: relative;
   cursor: pointer;
+  margin-bottom: 5px;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 9px 9px 18px #c7c7c7, -9px -9px 18px #f9f9f9;
 }
 .dark-night-mode > img {
-  padding: 1rem 1rem 1rem 1rem;
+  margin: auto;
 }
 .dark-night-mode img {
   position: absolute;
