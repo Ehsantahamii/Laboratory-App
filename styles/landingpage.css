@@ -552,6 +552,46 @@ section.blog {
   float: left;
 }
 
+/* comments styles */
+section.comments {
+  margin: 3rem auto;
+}
+.comments-swiper {
+  gap: 15px;
+  margin: auto;
+}
+.comments-swiper-slide {
+  width: 28.4rem !important;
+  height: 10.6rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1.5rem;
+  background: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.comments-swiper-slide:is(.swiper-slide-active){
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
 /* footer styles */
 
 footer.footer {

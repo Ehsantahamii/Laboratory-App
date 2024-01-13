@@ -108,6 +108,7 @@ address {
   -o-transition: all 0.4s ease;
 }
 .go-top-btn {
+  display: none;
   position: fixed;
   bottom: 1rem;
   right: 1rem;

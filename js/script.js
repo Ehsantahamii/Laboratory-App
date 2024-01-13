@@ -64,3 +64,15 @@ $("#guid-accordion").click(function () {
   $(".navbar-guid-accordions").toggleClass("accordions-open");
   $("#guid-accordion img").toggleClass("rotate270");
 });
+
+
+// Comment swiper
+new Swiper('.comment-swiper', {
+  slidesPerView: 3,
+  grid: {
+    rows: 3,
+  },
+  mousewheel: {
+    forceToAxis: true,
+  },
+});
