@@ -113,6 +113,11 @@ address {
   bottom: 1rem;
   right: 1rem;
 }
+.go-top-btn svg {
+  width: 5vw;
+  max-width: 5.25rem;
+  min-width: 3rem;
+}
 .scrollbar {
   background: #000;
 }

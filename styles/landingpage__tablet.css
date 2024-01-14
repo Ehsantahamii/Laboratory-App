@@ -4,7 +4,7 @@
     height: 16.8rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   h2 {
     font-size: 1rem !important;
   }
@@ -62,6 +62,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+    /* overflow-y: scroll; */
   }
   .nav-item-list .nav-item {
     margin: 1.25rem 0;
@@ -283,6 +284,15 @@
   .blog .blog-container {
     flex-direction: column;
   }
+  .comments-swiper
+    .comments-swiper-slide
+    .comments-swiper-slide:is(.swiper-slide-active) {
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+  }
 
   /* footer styles */
   footer.footer {
@@ -303,6 +313,9 @@
 @media (orientation: landscape) {
   nav.nav-container {
     width: 100vw !important;
+  }
+  .nav-item-list {
+    overflow-y: scroll;
   }
 }
 

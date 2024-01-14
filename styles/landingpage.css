@@ -93,7 +93,7 @@ nav {
   height: 2rem;
   position: relative;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin: 0 1rem;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 9px 9px 18px #c7c7c7, -9px -9px 18px #f9f9f9;
@@ -247,7 +247,8 @@ section.info-boxes {
 .info-boxes div.info-box-item {
   width: 21.8rem;
   height: 17.8rem;
-  padding: 2rem 1rem;
+  padding: 1.2rem 1rem;
+  justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   text-align: center;
   border-radius: 10px;
@@ -557,17 +558,21 @@ section.comments {
   margin: 3rem auto;
 }
 .comments-swiper {
-  gap: 15px;
+  gap: 1rem;
   margin: auto;
 }
-.comments-swiper-slide {
-  width: 28.4rem !important;
-  height: 10.6rem;
+.comments-swiper .comments-swiper-slide {
+  overflow: hidden;
+  gap: 0.2rem;
+  width: 90% !important;
+  max-width: 28.4rem !important;
+  min-height: 10.6rem;
   align-items: center;
   justify-content: center;
   margin: 1rem 1.5rem;
   background: #fff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 0.625rem;
   -webkit-border-radius: 0.625rem;
   -moz-border-radius: 0.625rem;
@@ -579,7 +584,27 @@ section.comments {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-.comments-swiper-slide:is(.swiper-slide-active){
+.comments-swiper .comments-swiper-slide > div:first-child {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.comments-swiper .comments-swiper-slide > div span {
+  margin-right: 0.2rem;
+}
+.comments-swiper .comments-swiper-slide > div .comment-username {
+  font-weight: 700;
+}
+.comments-swiper .comments-swiper-slide > div .comment-date {
+  font-weight: 100;
+  font-size: 0.87rem;
+}
+.comments-swiper .comments-swiper-slide img {
+  width: 2.6rem;
+  height: 2.5rem;
+}
+.comments-swiper
+  .comments-swiper-slide
+  .comments-swiper-slide:is(.swiper-slide-active) {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
