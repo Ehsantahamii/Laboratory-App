@@ -12,16 +12,22 @@
     font-size: 0.87rem !important;
   }
   .nav-container-mobile {
-    visibility: hidden;
-    opacity: 0;
     background: var(--light-blue-bg);
     inset: 0;
     z-index: 99999;
     position: fixed;
     width: 100dvw;
     height: 100%;
-    animation: scaleOut 2s ease 0s 1 normal forwards;
-    -webkit-animation: scaleOut 2s ease 0s 1 normal forwards;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  .scale-out {
+    display: initial;
+    animation: scaleOut 1s ease 1 normal forwards;
+    -webkit-animation: scaleOut 1s ease 1 normal forwards;
   }
   .nav-container-mobile > div > button > svg {
     width: 2rem;
@@ -127,6 +133,7 @@
   }
   .header-container .header-side:nth-child(2) img:nth-child(1),
   .header-container .header-side:nth-child(1) img:nth-child(2) {
+    z-index: -1;
     width: 2.5rem;
     height: 1.68rem;
   }
@@ -134,10 +141,12 @@
   .header-container .header-side:nth-child(2) img:nth-child(3),
   .header-container .header-side:nth-child(1) img:nth-child(1),
   .header-container .header-side:nth-child(1) img:nth-child(4) {
+    z-index: -1;
     width: 3.7rem;
     height: 2.6rem;
   }
   .header-container .header-side:nth-child(1) img:nth-child(3) {
+    z-index: -1;
     width: 2.6rem;
     height: 3.7rem;
     right: 0;
@@ -184,20 +193,24 @@
     margin: inherit;
   }
   .reputation img:nth-child(5) {
+    z-index: -1;
     top: 4rem;
     width: 2.5rem;
     height: 1.68rem;
   }
   .reputation img:nth-child(6) {
+    z-index: -1;
     width: 3.7rem;
     height: 2.6rem;
   }
   .reputation img:nth-child(7) {
+    z-index: -1;
     bottom: -5.7rem;
     width: 3.7rem;
     height: 2.6rem;
   }
   .reputation img:nth-child(8) {
+    z-index: -1;
     width: 2.6rem;
     height: 3.7rem;
   }
@@ -268,10 +281,12 @@
   }
   .our-team ul.our-team-container > img:nth-child(1),
   .our-team ul.our-team-container > img:nth-child(3) {
+    z-index: -1;
     width: 3.7rem;
     height: 2.6rem;
   }
   .our-team ul.our-team-container > img:nth-child(2) {
+    z-index: -1;
     width: 2.5rem;
     height: 1.68rem;
   }
@@ -323,6 +338,11 @@
   section {
     max-width: 95vw;
     overflow: hidden;
+  }
+  .about-us .about-us-side ul.about-features-list li.feature {
+    max-width: unset;
+    flex: 1 0 100%;
+    margin: auto;
   }
 }
 

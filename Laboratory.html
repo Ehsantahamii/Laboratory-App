@@ -146,7 +146,6 @@
         </li>
       </ul>
     </div>
-
     <!----------- header start ----------->
     <header class="header-container flex-hz">
       <div class="header-side">
@@ -379,11 +378,11 @@
         <ul class="about-features-list">
           <li class="feature flex-hz">
             <img src="/images/laboratory about us vector.svg" alt="icon" />
-            تشخیص جنسیت
+            کاریوتایپ مایع آمنیون جنینی
           </li>
           <li class="feature flex-hz">
             <img src="/images/laboratory about us vector.svg" alt="icon" />
-            تشخیص علل ناباروری
+            آزمایش NIPT
           </li>
           <li class="feature flex-hz">
             <img
@@ -391,7 +390,7 @@
               alt="icon"
               loading="lazy"
             />
-            پنل بیماری های مقاربتی
+            تشخيص قبل از تولد تالاسمی
           </li>
           <li class="feature flex-hz">
             <img
@@ -399,7 +398,7 @@
               alt="icon"
               loading="lazy"
             />
-            تشخیص سرطان
+            بررسی ناقلین نابینایی و ناشنوایی
           </li>
           <li class="feature flex-hz">
             <img
@@ -407,7 +406,7 @@
               alt="icon"
               loading="lazy"
             />
-            غربالگری و آزمایشات دوره بارداری
+            کاریوتایپ نواری (کشت کروموزومی)
           </li>
           <li class="feature flex-hz">
             <img
@@ -415,7 +414,7 @@
               alt="icon"
               loading="lazy"
             />
-            بررسی بیماری های ارثی
+            شخيص هویت و اثبات ابوت
           </li>
           <li class="feature flex-hz">
             <img
@@ -423,7 +422,7 @@
               alt="icon"
               loading="lazy"
             />
-            توالی یابی اگزوم
+            HPV
           </li>
           <li class="feature flex-hz">
             <img
@@ -431,7 +430,7 @@
               alt="icon"
               loading="lazy"
             />
-            کرونا
+            تست تشخیص انواع فلج های مادر زادی
           </li>
         </ul>
         <div>
@@ -496,46 +495,43 @@
           loading="lazy"
         />
 
-        <li class="team-member flex-hz">
-          <img src="/images/team-member 1.png" alt="team-member-image" />
-          <div>
-            <h3>محمد احمد زاده</h3>
-            <p>کارشناس ارشد علوم آزمایشگاهی</p>
-            <button class="btn" type="button">
-              <a href="/">آشنایی بیشتر</a>
-            </button>
-          </div>
-        </li>
-        <li class="team-member flex-hz">
-          <img src="/images/team-member 2.png" alt="team-member-image" />
-          <div>
-            <h3>محمد احمد زاده</h3>
-            <p>کارشناس ارشد علوم آزمایشگاهی</p>
-            <button class="btn" type="button">
-              <a href="/">آشنایی بیشتر</a>
-            </button>
-          </div>
-        </li>
-        <li class="team-member flex-hz">
-          <img src="/images/team-member 3.png" alt="team-member-image" />
-          <div>
-            <h3>محمد احمد زاده</h3>
-            <p>کارشناس ارشد علوم آزمایشگاهی</p>
-            <button class="btn" type="button">
-              <a href="/">آشنایی بیشتر</a>
-            </button>
-          </div>
-        </li>
-        <li class="team-member flex-hz">
-          <img src="/images/team-member 4.png" alt="team-member-image" />
-          <div>
-            <h3>محمد احمد زاده</h3>
-            <p>کارشناس ارشد علوم آزمایشگاهی</p>
-            <button class="btn" type="button">
-              <a href="/">آشنایی بیشتر</a>
-            </button>
-          </div>
-        </li>
+        <!-- swiper -->
+        <swiper-container
+          class="team-member-swiper"
+          loop="true"
+          allow-slide-next="true"
+          allow-slide-prev="true"
+          slides-per-view="3"
+        >
+          <swiper-slide class="team-member flex-vr">
+            <img src="/images/team-member 1.png" alt="team-member-image" />
+            <div>
+              <h3>محمد احمد زاده</h3>
+              <p>کارشناس ارشد علوم آزمایشگاهی</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="team-member flex-vr">
+            <img src="/images/team-member 2.png" alt="team-member-image" />
+            <div>
+              <h3>محمد احمد زاده</h3>
+              <p>کارشناس ارشد علوم آزمایشگاهی</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="team-member flex-vr">
+            <img src="/images/team-member 3.png" alt="team-member-image" />
+            <div>
+              <h3>محمد احمد زاده</h3>
+              <p>کارشناس ارشد علوم آزمایشگاهی</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="team-member flex-vr">
+            <img src="/images/team-member 4.png" alt="team-member-image" />
+            <div>
+              <h3>محمد احمد زاده</h3>
+              <p>کارشناس ارشد علوم آزمایشگاهی</p>
+            </div>
+          </swiper-slide>
+        </swiper-container>
       </ul>
     </section>
     <!----------- blog start ----------->
@@ -575,11 +571,12 @@
       </div>
     </section>
     <!----------- comments start ----------->
-
     <section class="comments">
       <swiper-container
         class="comments-swiper"
-        slides-per-view="1"
+        allow-slide-next="true"
+        allow-slide-prev="true"
+        slides-per-view="3"
         autoplay="true"
         loop="true"
         mousewheel="true"

@@ -116,6 +116,11 @@ nav {
   visibility: visible !important;
   opacity: 1 !important;
 }
+.dark-box-shadowing {
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+    0 0 0 1px hsla(0, 0%, 0%, 0.05), 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
 
 /* navbar dropdown styles */
 ul.guid-dropdown {
@@ -458,8 +463,6 @@ section.our-team {
 
 .our-team ul.our-team-container {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   width: 90dvw;
   max-width: 1280px;
   margin: 5rem auto;
@@ -493,29 +496,33 @@ section.our-team {
   -webkit-animation: rotating30 6s infinite linear;
 }
 
-.our-team ul.our-team-container li.team-member {
-  flex: 0 0 50%;
-  max-width: 50%;
-  align-items: end;
-  padding: 0 0 1rem 0;
+.our-team ul.our-team-container .team-member {
+  background: #fff;
+  text-align: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  width: 20rem !important;
+  padding: 1rem;
   gap: 3.12rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
-.our-team ul.our-team-container li.team-member h3 {
-  margin-bottom: 1.25rem;
-  text-align: right;
+.our-team ul.our-team-container .team-member img {
+  max-width: 12.5rem;
+}
+.our-team ul.our-team-container .team-member h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
 }
-.our-team ul.our-team-container li.team-member p {
-  margin-bottom: 4.25rem;
-  text-align: right;
+.our-team ul.our-team-container .team-member p {
+  margin-bottom: 1rem;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-}
-.our-team ul.our-team-container li.team-member button {
-  padding: 0.81rem 1.87rem;
 }
 
 /* blog styles */

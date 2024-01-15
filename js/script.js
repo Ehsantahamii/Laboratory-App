@@ -16,25 +16,29 @@ $(function () {
 // open / close navbar
 $("#menu-btn").click(function () {
   $("#mobile-nav").toggleClass("open");
+  $("#mobile-nav").removeClass("scale-out");
+
 });
 $("#closeMenu").click(function () {
   $("#mobile-nav").removeClass("open");
+  $("#mobile-nav").toggleClass("scale-out");
 });
 
 // dark / light
 $("#dark-btn").click(function () {
   $(
-    "body ,footer, nav, article,.reservation,.nav-container-mobile "
+    "body ,footer, nav, article,.reservation,.nav-container-mobile,swiper-slide "
   ).toggleClass("dark-active");
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector").css("color", "#fff");
   $(".hamburger-menu-btn svg path").css("fill", "#fff");
   $(".dark-night-mode").css({ "box-shadow": "unset", background: "#c7c7c7" });
   $("#light-btn").toggleClass("active-mode");
+  $("swiper-slide").toggleClass(".dark-box-shadowing");
   $("#dark-btn").removeClass("active-mode");
 });
 $("#light-btn").click(function () {
   $(
-    "body ,footer, nav ,article,.reservation,.nav-container-mobile"
+    "body ,footer, nav ,article,.reservation,.nav-container-mobile,swiper-slide"
   ).removeClass("dark-active");
   $("h1 , h2, h3,h4 ,p , a").css("color", "");
   $(".hamburger-menu-btn svg path").css("fill", "");
@@ -65,14 +69,27 @@ $("#guid-accordion").click(function () {
   $("#guid-accordion img").toggleClass("rotate270");
 });
 
-
 // Comment swiper
-new Swiper('.comment-swiper', {
-  slidesPerView: 3,
-  grid: {
-    rows: 3,
+const swiper = new Swiper(".team-member-swiper", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  autoplay: {
+    delay: 2000,
   },
-  mousewheel: {
-    forceToAxis: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });
