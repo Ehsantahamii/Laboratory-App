@@ -11,6 +11,9 @@
   h3 {
     font-size: 0.87rem !important;
   }
+  .dark-night-mode {
+    margin: 0 1rem 5px 1rem;
+  }
   .nav-container-mobile {
     background: var(--light-blue-bg);
     inset: 0;
@@ -68,7 +71,6 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    /* overflow-y: scroll; */
   }
   .nav-item-list .nav-item {
     margin: 1.25rem 0;
