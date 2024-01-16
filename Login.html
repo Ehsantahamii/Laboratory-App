@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="/styles/Login.css" />
   </head>
   <body>
-    <main class="login-container flex-vr">
-      <div>
-        <img src="/images/login-vector.svg" alt="دریافت نتیجه/ورود" />
+    <main class="login-container">
+      <div class="login-inner-container  flex-vr">
+        <img class="head-shape" src="/images/login-head-shape.svg" alt="shape">
+        <div>
+          <img  src="/images/login-vector.svg" alt="دریافت نتیجه/ورود" />
+        </div>
+        <form action="#">
+          <!-- <label for="file-number">شماره پرونده</label> -->
+          <input id="file-number" type="text" placeholder="شماره پرونده" />
+        </form>
+        <button class="btn">ادامه</button>
       </div>
-      <form action="#">
-        <!-- <label for="file-number">شماره پرونده</label> -->
-        <input id="file-number" type="text" placeholder="شماره پرونده" />
-      </form>
-      <button class="btn">ادامه</button>
     </main>
   </body>
 </html>

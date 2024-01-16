@@ -33,7 +33,6 @@ $("#dark-btn").click(function () {
   $(".hamburger-menu-btn svg path").css("fill", "#fff");
   $(".dark-night-mode").css({ "box-shadow": "unset", background: "#c7c7c7" });
   $("#light-btn").toggleClass("active-mode");
-  $("swiper-slide").toggleClass(".dark-box-shadowing");
   $("#dark-btn").removeClass("active-mode");
 });
 $("#light-btn").click(function () {
@@ -42,7 +41,6 @@ $("#light-btn").click(function () {
   ).removeClass("dark-active");
   $("h1 , h2, h3,h4 ,p , a").css("color", "");
   $(".hamburger-menu-btn svg path").css("fill", "");
-  $(".dark-night-mode").css({ "box-shadow": "", background: "" });
   $("#dark-btn").toggleClass("active-mode");
   $("#light-btn").removeClass("active-mode");
 });
