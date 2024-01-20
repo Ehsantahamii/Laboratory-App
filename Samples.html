@@ -100,6 +100,60 @@
         </div>
       </div>
     </nav>
+    <!----------- navbar mobile start----------->
+    <div id="mobile-nav" class="nav-container-mobile flex-vr">
+      <div class="">
+        <button id="closeMenu" style="z-index: 999999" title="بستن">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul class="nav-item-list flex-vr">
+        <li class="nav-item">
+          <a href="#">صفحه اصلی</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">آزمایش ها</a>
+        </li>
+        <li id="guid-accordion" class="nav-item flex-hz">
+          <p style="cursor: pointer">راهنمای بیماران</p>
+          <img
+            class="guid-accordion-vector"
+            src="/images/arrow vector.svg"
+            alt="arrow-vector"
+          />
+        </li>
+        <ul class="navbar-guid-accordions flex-vr">
+          <li>شرایط هر آزمایش</li>
+          <li>نوبت دهی آنلاین</li>
+          <li>بیمه ها</li>
+          <li>دریافت آنلاین نتیجه</li>
+        </ul>
+        <li class="nav-item">
+          <a href="#">خدمات</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">تماس با ما</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">درباره ما</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">مطالب پزشکی</a>
+        </li>
+      </ul>
+    </div>
 
     <!----------- header start ----------->
     <header class="flex-vr">
@@ -111,9 +165,9 @@
     </header>
 
     <main>
-      <div class="tool-box">
+      <div class="tool-box flex-hz">
         <div class="flex-hz">
-          <button id="samples-category-btn flex-hz">
+          <button id="samples-category-btn" class="flex-hz">
             دسته بندی ها
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -130,78 +184,84 @@
           </button>
 
           <div class="filter-box flex-hz">
-            <label for="">زنان</label>
-            <input type="checkbox" name="زنان" id="" />
-            <label for="">اطفال</label>
-            <input type="checkbox" name="زنان" id="" />
-            <label for="">انکولوژی</label>
-            <input type="checkbox" name="زنان" id="" />
+            <div class="checkbox-wrapper-42 flex-hz">
+              <input type="checkbox" name="زنان" id="cbx-42" />
+              <label class="lbl" for="cbx-42">زنان</label>
+              <label class="cbx" for="cbx-42"></label>
+            </div>
+            <div class="checkbox-wrapper-42 flex-hz">
+              <input type="checkbox" name="اطفال" id="cbx-43" />
+              <label class="lbl" for="cbx-43">اطفال</label>
+              <label class="cbx" for="cbx-43"></label>
+            </div>
+            <div class="checkbox-wrapper-42 flex-hz">
+              <input type="checkbox" name="انکولوژی" id="cbx-44" />
+              <label class="lbl" for="cbx-44">انکولوژی</label>
+              <label class="cbx" for="cbx-44"></label>
+            </div>
           </div>
         </div>
+        <div class="search-bar"></div>
       </div>
       <section class="samples-container"></section>
     </main>
-    <!----------- footer start ----------->
-
-    <!-- <footer class="footer flex-hz">
-      <div class="footer-side footer-side-1 flex-vr">
-        <div>
-          <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطر آنچنان که لازم است.
-          </p>
-        </div>
-        <div class="enamad-box flex-hz">
-          <img src="/images/sample.png" alt="" loading="lazy" />
-          <img src="/images/sample.png" alt="" loading="lazy" />
-        </div>
-      </div>
-      <ul class="footer-side footer-side-2">
-        <h3>خدمات</h3>
-        <li><a href="/">آزمایشات ژنتیک</a></li>
-        <li><a href="/">جوابدهی آنلاین</a></li>
-        <li><a href="/">هماهنگی پذیرش</a></li>
-        <li><a href="/">مشاوره تلفنی</a></li>
-        <li><a href="/">مطالب روز پزشکی</a></li>
-      </ul>
-      <ul class="footer-side footer-side-3">
-        <h3>اطلاعات</h3>
-        <li class="flex-hz">
-          <img
-            src="/images/tel vector.svg"
-            alt="tel vector"
-            title="شماره تماس"
-          />
-          ۳۴-۳۲۵۳۲۴۵۱
-        </li>
-        <li class="flex-hz">
-          <img
-            src="/images/location vector.svg"
-            alt="location vector"
-            title="آدرس"
-          />
-          <address>خیابان استقلال ۱۶ - نبش فرعی اول</address>
-        </li>
-        <li class="flex-hz">
-          <img
-            src="/images/clock vector 2.svg"
-            alt="time work vector"
-            title="ساعت کاری"
-          />
-          ساعت نمونه گیری از ۸ صبح تا ۲ بعد از ظهر
-        </li>
-        <li class="flex-hz">
-          <img
-            src="/images/clock vector.svg"
-            alt="time open vector"
-            title="ساعت پاسخگویی"
-          />
-          ساعت پاسخ گویی از ۵ عصر تا ۸ شب
-        </li>
-      </ul>
-    </footer> -->
-    <script src="/js/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
+  <!-- --------- footer start ----------->
+
+  <footer class="footer flex-hz">
+    <div class="footer-side footer-side-1 flex-vr">
+      <div>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+          ستون و سطر آنچنان که لازم است.
+        </p>
+      </div>
+      <div class="enamad-box flex-hz">
+        <img src="/images/sample.png" alt="" loading="lazy" />
+        <img src="/images/sample.png" alt="" loading="lazy" />
+      </div>
+    </div>
+    <ul class="footer-side footer-side-2">
+      <h3>خدمات</h3>
+      <li><a href="/">آزمایشات ژنتیک</a></li>
+      <li><a href="/">جوابدهی آنلاین</a></li>
+      <li><a href="/">هماهنگی پذیرش</a></li>
+      <li><a href="/">مشاوره تلفنی</a></li>
+      <li><a href="/">مطالب روز پزشکی</a></li>
+    </ul>
+    <ul class="footer-side footer-side-3">
+      <h3>اطلاعات</h3>
+      <li class="flex-hz">
+        <img src="/images/tel vector.svg" alt="tel vector" title="شماره تماس" />
+        ۳۴-۳۲۵۳۲۴۵۱
+      </li>
+      <li class="flex-hz">
+        <img
+          src="/images/location vector.svg"
+          alt="location vector"
+          title="آدرس"
+        />
+        <address>خیابان استقلال ۱۶ - نبش فرعی اول</address>
+      </li>
+      <li class="flex-hz">
+        <img
+          src="/images/clock vector 2.svg"
+          alt="time work vector"
+          title="ساعت کاری"
+        />
+        ساعت نمونه گیری از ۸ صبح تا ۲ بعد از ظهر
+      </li>
+      <li class="flex-hz">
+        <img
+          src="/images/clock vector.svg"
+          alt="time open vector"
+          title="ساعت پاسخگویی"
+        />
+        ساعت پاسخ گویی از ۵ عصر تا ۸ شب
+      </li>
+    </ul>
+  </footer>
 </html>
