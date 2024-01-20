@@ -1,3 +1,5 @@
+// AOS.init();
+
 $(function () {
   var shrinkHeader = 70;
 
@@ -70,26 +72,32 @@ $("#guid-accordion").click(function () {
 });
 
 // Comment swiper
-const swiper = new Swiper(".team-member-swiper", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+// const swiper = new Swiper(".team-member-swiper", {
+//   // Optional parameters
+//   direction: "vertical",
+//   loop: true,
+//   autoplay: {
+//     delay: 2000,
+//   },
+//   // If we need pagination
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//   },
+// });
+
+// open/close samples category filter box
+$("#samples-category-btn").click(function () {
+  $(".filter-box").toggleClass("open-filter-box");
+  $("#samples-category-btn svg").toggleClass("rotate180");
 });

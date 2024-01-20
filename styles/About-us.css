@@ -1,19 +1,20 @@
 header {
-  background: url("/images/graph-texture.svg") no-repeat;
+  background: url("/images/graph-texture.svg") no-repeat center;
   background-size: contain;
-  min-height: 65dvh;
+  min-height: 30dvw;
   max-height: 25rem;
-  margin: auto;
+  margin: 6rem auto;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 section.biography {
+  overflow-x: hidden;
   margin: 3rem auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .biography .biography-side:first-child {
-  width: 60%;
+  width: 55%;
   text-align: right;
 }
 .biography .biography-side:first-child h2 {
@@ -26,16 +27,60 @@ section.biography {
 .biography .biography-side:first-child p {
   color: #3f3f3f;
   text-align: justify;
+  padding: 0 1rem;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .biography .biography-side:nth-child(2) {
-  width: 40%;
+  width: 35%;
   text-align: left;
 }
 .biography .biography-side:nth-child(2) img {
   max-width: 100%;
   height: auto !important;
+}
+
+/* laboratory-info style */
+section.laboratory-info {
+  overflow-x: hidden;
+  justify-content: space-around;
+  margin: auto auto 3rem auto;
+}
+.laboratory-info div:first-child {
+  width: 35%;
+}
+.laboratory-info div:nth-child(2) {
+  width: 55%;
+}
+.laboratory-info div:nth-child(2) button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  section.biography {
+    flex-direction: column-reverse;
+  }
+  .biography .biography-side:first-child,
+  .biography .biography-side:nth-child(2),
+  .laboratory-info div:first-child,
+  .laboratory-info div:nth-child(2) {
+    width: 80%;
+    text-align: center;
+  }
+  section.laboratory-info {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 640px) {
+  header h1.header-title {
+    font-size: 1.25em;
+  }
+  header p.header-discretion {
+    font-size: 0.7rem;
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,56 @@
+header {
+  background: url("/images/graph-texture.svg") no-repeat center;
+  background-size: contain;
+  min-height: 30dvw;
+  max-height: 25rem;
+  margin: 6rem auto 3rem auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tool-box > div {
+  gap: 0.6rem;
+}
+.tool-box > div > button {
+  z-index: 999;
+  font-size: 1.5rem;
+}
+/* .tool-box > div > div input {
+  margin: 0 1rem;
+} */
+.tool-box > div > button svg {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.filter-box {
+  width: 0px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+.filter-box .open-filter-box .tool-box > div > div input {
+  margin: 0 1rem;
+}
+
+.open-filter-box {
+  width: 200px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+.rotate180 {
+  rotate: 180deg;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
