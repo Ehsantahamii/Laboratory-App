@@ -1,0 +1,11 @@
+header {
+    background: url("/images/graph-texture.svg") no-repeat center;
+    background-size: contain;
+    min-height: 30dvw;
+    max-height: 25rem;
+    margin: 6rem auto 3rem auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  

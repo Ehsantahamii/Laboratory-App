@@ -1,11 +1,11 @@
 // AOS.init();
 
 $(function () {
-  var shrinkHeader = 70;
+  var topHeight = 70;
 
   $(window).scroll(function () {
     var scroll = getCurrentScroll();
-    if (scroll >= shrinkHeader) {
+    if (scroll >= topHeight) {
       $(".nav-container").addClass("nav-animate");
     } else {
       $(".nav-container").removeClass("nav-animate");
@@ -65,7 +65,6 @@ topBtn.on("click", function (e) {
 });
 
 // accordion
-
 $("#guid-accordion").click(function () {
   $(".navbar-guid-accordions").toggleClass("accordions-open");
   $("#guid-accordion img").toggleClass("rotate270");
@@ -75,4 +74,15 @@ $("#guid-accordion").click(function () {
 $("#samples-category-btn").click(function () {
   $(".filter-box").toggleClass("open-filter-box");
   $("#samples-category-btn svg").toggleClass("rotate180");
+});
+
+// open/close search box
+$("#search-btn").click(function () {
+  $(".search-bar").toggleClass("open-search-box");
+  $(".search-bar input").css("width", "95%");
+});
+
+$("body, header , section").on("click", function (e) {
+  if (e.target !== this) return;
+  $(".search-bar").removeClass("open-search-box");
 });

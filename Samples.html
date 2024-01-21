@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/landingpage.css" />
     <link rel="stylesheet" href="/styles/landingpage__tablet.css" />
+    <link rel="stylesheet" href="/styles/header-component.css" />
     <link rel="stylesheet" href="/styles/Samples.css" />
   </head>
   <body>
@@ -18,7 +19,7 @@
         </div>
         <ul class="navbar-container">
           <li class="nav-item">
-            <a href="#">صفحه اصلی</a>
+            <a href="/Laboratory.html">صفحه اصلی</a>
           </li>
           <li class="nav-item">
             <a href="#">آزمایش ها</a>
@@ -201,9 +202,38 @@
             </div>
           </div>
         </div>
-        <div class="search-bar"></div>
+        <div id="search-btn" class="search-bar flex-hz">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+          >
+            <path
+              d="M14.3088 21.3812C11.9367 21.3807 9.63302 20.5867 7.76447 19.1255L1.88967 25L0 23.1104L5.87481 17.2359C4.41279 15.3673 3.6182 13.0632 3.61763 10.6906C3.61763 4.79608 8.41396 0 14.3088 0C20.2037 0 25 4.79608 25 10.6906C25 16.5851 20.2037 21.3812 14.3088 21.3812ZM14.3088 2.67265C9.88667 2.67265 6.29043 6.26871 6.29043 10.6906C6.29043 15.1125 9.88667 18.7086 14.3088 18.7086C18.731 18.7086 22.3272 15.1125 22.3272 10.6906C22.3272 6.26871 18.731 2.67265 14.3088 2.67265Z"
+              fill="#3F3F3F"
+            />
+            <path
+              d="M12.4223 8.80096C11.9158 9.30876 11.6365 9.9796 11.6365 10.6905H8.96368C8.9625 9.98819 9.10055 9.29258 9.36985 8.64392C9.63914 7.99525 10.0343 7.4064 10.5326 6.91139C12.5559 4.89086 16.064 4.89086 18.0859 6.91139L16.1989 8.80363C15.1833 7.79069 13.4326 7.79337 12.4223 8.80096Z"
+              fill="#3F3F3F"
+            />
+          </svg>
+          <input type="search" name="" id="#" placeholder="جستجو ..." />
+        </div>
       </div>
-      <section class="samples-container"></section>
+      <section class="samples-container">
+        <div class="samples-card">
+          <img src="images/Article poster 1.jpg" alt="Article-poster" />
+          <h3>آزمایش ژنتیک</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطر آنچنان که لازم است.
+          </p>
+          <a href="">ادامه مطلب</a>
+        </div>
+      </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
