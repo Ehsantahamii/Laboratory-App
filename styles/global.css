@@ -56,6 +56,7 @@ button {
   cursor: pointer;
   border: 0;
   background: none;
+  color: var(--black);
 }
 img {
   -webkit-user-drag: none;

@@ -625,20 +625,22 @@ section.comments {
 
 footer.footer {
   width: 100%;
-  align-items: flex-start;
-  flex-wrap: wrap;
   background: #fff;
   box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.25),
     0px 2px 8px 0px rgba(0, 0, 0, 0.25),
     0px 0px 0px 1px rgba(255, 255, 255, 0.1) inset;
 }
+.footer > div:first-child {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 .footer .footer-side {
   max-width: 33.333%;
   flex: 0 0 33.333%;
-  padding: 4.87rem 2rem;
+  padding: 4.87rem 2rem 0rem 2rem;
 }
 .footer .footer-side h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -658,6 +660,14 @@ footer.footer {
 }
 .footer .footer-side-3 > li > img {
   margin-left: 0.6rem;
+}
+.footer .developers {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.footer .developers > a > img {
+  max-width: 3.75rem;
 }
 
 @media screen and (max-width: 1280px) {
