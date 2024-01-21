@@ -31,6 +31,7 @@ main.not-found-page {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding: 0 0.6rem;
 }
 .not-found-page > div > a > button {
   padding: 10px 1rem;
