@@ -34,7 +34,7 @@ $("#dark-btn").click(function () {
     "color",
     "#fff"
   );
-  $(".arrow-vector, .arrow-vector path ,button path").css("fill", "#fff");
+  $(".arrow-vector, .arrow-vector path").css("fill", "#fff");
   $(".hamburger-menu-btn svg path").css("fill", "#fff");
   $(".dark-night-mode").css({ "box-shadow": "unset", background: "#c7c7c7" });
   $("#light-btn").toggleClass("active-mode");
@@ -42,10 +42,10 @@ $("#dark-btn").click(function () {
 });
 $("#light-btn").click(function () {
   $(
-    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card ,.sample-card"
+    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card,.sample-card"
   ).removeClass("dark-active");
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector , .tool-box button").css("color", "");
-  $(".arrow-vector, .arrow-vector path , button path").css("fill", "#333333");
+  $(".arrow-vector, .arrow-vector path").css("fill", "#333333");
   $(".dark-night-mode").css({ "box-shadow": "", background: "" });
   $(".hamburger-menu-btn svg path").css("fill", "");
   $("#dark-btn").toggleClass("active-mode");

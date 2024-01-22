@@ -51,6 +51,8 @@ img.head-shape {
 .login-inner-container > form {
   width: 100%;
   text-align: center;
+  align-items: center;
+  gap: 1rem;
 }
 .login-inner-container > button,
 .login-inner-container > form > input {

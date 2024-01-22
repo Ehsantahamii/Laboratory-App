@@ -133,7 +133,7 @@ ul.guid-dropdown {
   width: 9.7rem;
   gap: 15px;
   padding: 10px 5px;
-  background: #fff;
+  background: var(--white-bg);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -497,10 +497,10 @@ section.our-team {
 }
 
 .our-team ul.our-team-container .team-member {
-  background: #fff;
+  background: var(--white-bg);
   text-align: center;
   align-items: center;
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
   width: 20rem !important;
   padding: 1rem;
   gap: 3.12rem;
@@ -544,7 +544,9 @@ section.blog {
 }
 .blog .blog-container article.article {
   max-width: 23.43rem;
-  background: #fff;
+  height: 26.25rem;
+  justify-content: space-between;
+  background: var(--white-bg);
   padding: 1rem;
 }
 .blog .blog-container article.article > img {
@@ -625,7 +627,7 @@ section.comments {
 
 footer.footer {
   width: 100%;
-  background: #fff;
+  background: var(--white-bg);
   box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.25),
     0px 2px 8px 0px rgba(0, 0, 0, 0.25),
     0px 0px 0px 1px rgba(255, 255, 255, 0.1) inset;
