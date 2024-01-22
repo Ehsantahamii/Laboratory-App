@@ -9,6 +9,8 @@ section.blogs-container {
 .blogs-container .blog-card {
   cursor: default;
   max-width: 23.43rem;
+  height: 26.25rem;
+  justify-content: space-between;
   padding: 1rem;
   text-align: center;
   background-color: #ffffff;

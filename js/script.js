@@ -85,7 +85,8 @@ $("#search-btn").click(function () {
   $(".search-bar input").css("width", "95%");
 });
 
-$("body, header , section").on("click", function (e) {
+$("body, header , section").not($("#search-btn")).on("click", function (e) {
   if (e.target !== this) return;
   $(".search-bar").removeClass("open-search-box");
 });
+("body").not($("#menutop"))
