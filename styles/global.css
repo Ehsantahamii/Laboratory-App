@@ -116,6 +116,20 @@ address {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  opacity: 0.6;
+  transform: all 0.2s ease-out;
+  -webkit-transform: all 0.2s ease-out;
+  -moz-transform: all 0.2s ease-out;
+  -ms-transform: all 0.2s ease-out;
+  -o-transform: all 0.2s ease-out;
+}
+.go-top-btn:hover{
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .go-top-btn svg {
   width: 5vw;

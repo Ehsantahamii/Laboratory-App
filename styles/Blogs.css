@@ -68,4 +68,7 @@ section.blogs-container {
     grid-template-columns: repeat(1, auto);
     justify-content: center;
   }
+  .blogs-container .blog-card {
+    margin: 0.5rem 0;
+  }
 }

@@ -28,7 +28,7 @@ $("#closeMenu").click(function () {
 // dark / light
 $("#dark-btn").click(function () {
   $(
-    "body ,footer, nav, article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card ,.sample-card"
+    "body ,footer, nav, article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card ,.sample-card,#closeMenu"
   ).toggleClass("dark-active");
   $("h1 , h2, h3,h4,p , a, .arrow-vector , .tool-box button").css(
     "color",
@@ -42,7 +42,7 @@ $("#dark-btn").click(function () {
 });
 $("#light-btn").click(function () {
   $(
-    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card,.sample-card"
+    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card,.sample-card,#closeMenu"
   ).removeClass("dark-active");
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector , .tool-box button").css("color", "");
   $(".arrow-vector, .arrow-vector path").css("fill", "#333333");

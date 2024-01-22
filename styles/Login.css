@@ -25,6 +25,22 @@ main.login-container {
   -ms-border-radius: 1.25rem;
   -o-border-radius: 1.25rem;
 }
+.login-container > a{
+  color: var(--black);
+  margin-top: 0.6rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
+  opacity: 0.6;
+}
+.login-container > a:hover{
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
 .login-container .login-inner-container {
   position: relative;
   background: inherit;
@@ -68,25 +84,61 @@ img.head-shape {
 .login-inner-container > form > input {
   background: transparent;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.login-inner-container > button {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+img.login-vector {
+  position: absolute;
+}
+
+.login-vector:nth-child(2) {
+  left: 3rem;
+  top: 3rem;
+}
+.login-vector:nth-child(3) {
+  left: 10rem;
+  bottom: 3rem;
+}
+.login-vector:nth-child(4) {
+  right: 10rem;
+  bottom: 2rem;
+}
+.login-vector:nth-child(5) {
+  right: 10rem;
+  top: 6rem;
 }
 
 @media screen and (max-width: 992px) {
   body {
     background: #e1f4f5 url(/images/texture\ testing\ p2.svg);
   }
+  img.login-vector {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   body {
     background: #e1f4f5 url(/images/texture\ testing\ p1.svg);
   }
-  main.login-container{
+  main.login-container {
     height: 21rem;
   }
-  .login-inner-container div > img{
+  .login-inner-container div > img {
     max-width: 60%;
   }
-  .login-inner-container > button, .login-inner-container > form > input {
+  .login-inner-container > button,
+  .login-inner-container > form > input {
     width: 70%;
     height: 2.5rem;
   }
+  .login-inner-container > form > input{
+    font-size: 0.7rem;
+  }
+  .login-inner-container > button {
+  font-size: 1rem;
+  }
+
 }

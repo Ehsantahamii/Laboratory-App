@@ -52,5 +52,8 @@ section.samples-container {
     grid-template-columns: repeat(1, auto);
     justify-content: center;
   }
+  .samples-container .sample-card{
+    margin: 0.5rem 0;
+  }
 }
 
