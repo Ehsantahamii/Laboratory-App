@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/landingpage.css" />
+    <link rel="stylesheet" href="/styles/landingpage__tablet.css" />
+    <link rel="stylesheet" href="/styles/header-component.css" />
+    <link rel="stylesheet" href="/styles/Contact-us.css" />
+  </head>
+  <body>
+    <!----------- navbar laptop start----------->
+    <nav class="nav-container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="logo" title="لوگو" />
+        </div>
+        <ul class="navbar-container">
+          <li class="nav-item">
+            <a href="/Laboratory.html">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">آزمایش ها</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">راهنمای بیماران</a>
+            <svg
+              class="arrow-vector"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 15"
+              fill="none"
+            >
+              <path
+                d="M9.6176 0.330173C9.86245 0.541647 10 0.828428 10 1.12745C10 1.42648 9.86245 1.71326 9.6176 1.92473L3.15257 7.50681L9.6176 13.0889C9.85551 13.3016 9.98716 13.5864 9.98418 13.8821C9.9812 14.1778 9.84385 14.4606 9.60169 14.6697C9.35954 14.8788 9.03196 14.9974 8.68951 15C8.34706 15.0025 8.01715 14.8889 7.77082 14.6834L0.382399 8.30409C0.137549 8.09261 0 7.80583 0 7.50681C0 7.20779 0.137549 6.921 0.382399 6.70953L7.77082 0.330173C8.01575 0.118763 8.34789 0 8.69421 0C9.04053 0 9.37268 0.118763 9.6176 0.330173Z"
+                fill="#333333"
+              />
+            </svg>
+            <ul class="guid-dropdown card-shadow flex-vr">
+              <li class="dropdown-item">
+                <a href="#">شرایط هر آزمایش</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">نوبت دهی آنلاین</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">بیمه ها</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">دریافت آنلاین نتیجه</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#">خدمات</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">تماس با ما</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">مطالب پزشکی</a>
+          </li>
+        </ul>
+
+        <div class="flex-hz">
+          <button id="menu-btn" class="hamburger-menu-btn" title="منو">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="25"
+              viewBox="0 0 30 25"
+              fill="none"
+            >
+              <path
+                d="M30 23.2232C30 24.2054 29.331 25 28.5075 25H16.4925C16.0967 25 15.717 24.8128 15.4371 24.4796C15.1572 24.1464 15 23.6944 15 23.2232C15 22.752 15.1572 22.3 15.4371 21.9668C15.717 21.6336 16.0967 21.4464 16.4925 21.4464H28.5075C29.3325 21.4464 30 22.2411 30 23.2232ZM30 12.5C30 13.4821 29.331 14.2768 28.5075 14.2768H1.4925C1.09666 14.2768 0.717041 14.0896 0.437143 13.7564C0.157245 13.4232 0 12.9712 0 12.5C0 12.0288 0.157245 11.5768 0.437143 11.2436C0.717041 10.9104 1.09666 10.7232 1.4925 10.7232H28.5075C29.3325 10.7232 30 11.5196 30 12.5ZM28.5075 3.55357C28.9033 3.55357 29.283 3.36637 29.5629 3.03316C29.8428 2.69995 30 2.24802 30 1.77679C30 1.30555 29.8428 0.85362 29.5629 0.520408C29.283 0.187196 28.9033 1.40438e-08 28.5075 0H10.4925C10.2965 -6.9538e-09 10.1024 0.0459579 9.92134 0.13525C9.74027 0.224542 9.57573 0.355418 9.43714 0.520408C9.29855 0.685398 9.18861 0.88127 9.11361 1.09684C9.0386 1.31241 9 1.54345 9 1.77679C9 2.01012 9.0386 2.24116 9.11361 2.45673C9.18861 2.6723 9.29855 2.86817 9.43714 3.03316C9.57573 3.19815 9.74027 3.32903 9.92134 3.41832C10.1024 3.50761 10.2965 3.55357 10.4925 3.55357H28.5075Z"
+                fill="#333333"
+              />
+            </svg>
+          </button>
+          <!-- dark /light mode btn -->
+
+          <div class="dark-night-mode flex-vr">
+            <img
+              class="active-mode"
+              id="dark-btn"
+              src="/images/moon.svg"
+              alt="dark-mode-vector"
+            />
+            <img id="light-btn" src="/images/sun.svg" alt="light-mode-vector" />
+          </div>
+
+          <button class="login-btn btn" type="button">
+            <a href="/Login.html">دریافت نتیجه/ورود</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!----------- navbar mobile start----------->
+    <div id="mobile-nav" class="nav-container-mobile flex-vr">
+      <div class="">
+        <button id="closeMenu" style="z-index: 999999" title="بستن">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul class="nav-item-list flex-vr">
+        <li class="nav-item">
+          <a href="#">صفحه اصلی</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">آزمایش ها</a>
+        </li>
+        <li id="guid-accordion" class="nav-item flex-hz">
+          <p style="cursor: pointer">راهنمای بیماران</p>
+          <img
+            class="guid-accordion-vector"
+            src="/images/arrow vector.svg"
+            alt="arrow-vector"
+          />
+        </li>
+        <ul class="navbar-guid-accordions flex-vr">
+          <li>شرایط هر آزمایش</li>
+          <li>نوبت دهی آنلاین</li>
+          <li>بیمه ها</li>
+          <li>دریافت آنلاین نتیجه</li>
+        </ul>
+        <li class="nav-item">
+          <a href="#">خدمات</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">تماس با ما</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">درباره ما</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">مطالب پزشکی</a>
+        </li>
+      </ul>
+    </div>
+
+    <!----------- header start ----------->
+    <header class="flex-vr">
+      <h1 class="header-title">با ما در تماس باشید</h1>
+      <p class="header-discretion">
+        تیم ما همیشه آماده خدمت رسانی به شما عزیزان میباشد
+      </p>
+    </header>
+
+    <main>
+      <section class="contact-us flex-hz">
+        <div class="contact-side flex-vr">
+          <h2>فاصه ما با شما به اندازه یک تماس است</h2>
+          <a href="tel:03432532451">۰۳۴۵۵۱۲۶۵۴</a>
+        </div>
+        <div class="contact-side">
+          <img
+            src="/images/laboratory-panel.png"
+            alt="آزمایشگاه دکتر صالح گوهری"
+          />
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <div class="form-container card-shadow">
+          <h2>تماس با ما</h2>
+          <p>نظرات و پیشنهادات خود را برای ما ارسال کنید.</p>
+          <form class="flex-vr" action="#">
+            <input type="text" placeholder="نام شما" />
+            <input type="email" placeholder="پست الکترونیک" />
+            <input type="text" placeholder="تلفن همراه (اختیاری)" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button class="btn" type="submit">ارسال پیام</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d215.3390976341972!2d57.0559032!3d30.2819444!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfa!2suk!4v1706033649879!5m2!1sfa!2suk"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <!----------- footer start ----------->
+
+    <footer class="footer flex-vr">
+      <div class="flex-hz">
+        <div class="footer-side footer-side-1 flex-vr">
+          <div>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطر آنچنان که لازم است.
+            </p>
+          </div>
+          <div class="enamad-box flex-hz">
+            <img src="/images/sample.png" alt="" loading="lazy" />
+            <img src="/images/sample.png" alt="" loading="lazy" />
+          </div>
+        </div>
+        <ul class="footer-side footer-side-2">
+          <h3>خدمات</h3>
+          <li><a href="/">آزمایشات ژنتیک</a></li>
+          <li><a href="/">جوابدهی آنلاین</a></li>
+          <li><a href="/">هماهنگی پذیرش</a></li>
+          <li><a href="/">مشاوره تلفنی</a></li>
+          <li><a href="/">مطالب روز پزشکی</a></li>
+        </ul>
+        <ul class="footer-side footer-side-3">
+          <h3>اطلاعات</h3>
+          <li class="flex-hz">
+            <img
+              src="/images/tel vector.svg"
+              alt="tel vector"
+              title="شماره تماس"
+            />
+            ۳۴-۳۲۵۳۲۴۵۱
+          </li>
+          <li class="flex-hz">
+            <img
+              src="/images/location vector.svg"
+              alt="location vector"
+              title="آدرس"
+            />
+            <address>خیابان استقلال ۱۶ - نبش فرعی اول</address>
+          </li>
+          <li class="flex-hz">
+            <img
+              src="/images/clock vector 2.svg"
+              alt="time work vector"
+              title="ساعت کاری"
+            />
+            ساعت نمونه گیری از ۸ صبح تا ۲ بعد از ظهر
+          </li>
+          <li class="flex-hz">
+            <img
+              src="/images/clock vector.svg"
+              alt="time open vector"
+              title="ساعت پاسخگویی"
+            />
+            ساعت پاسخ گویی از ۵ عصر تا ۸ شب
+          </li>
+        </ul>
+      </div>
+      <div class="developers">
+        <a href="https://developmart.ir/">
+          <img src="images/verified.gif" alt="" />
+          <p>طراحی شده توسط تیم طراحی سایت DevelopMart</p>
+        </a>
+      </div>
+    </footer>
+
+    <button id="go-top" class="go-top-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="#6dbec2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        >
+          <path d="M8.5 13L12 9.5l3.5 3.5" />
+          <path
+            d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"
+          />
+        </g>
+      </svg>
+    </button>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
