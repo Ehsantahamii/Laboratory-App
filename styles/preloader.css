@@ -1,5 +1,19 @@
+div.preloader-background{
+    z-index: 9999999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 110%;
+    height: 110%;
+    overflow: hidden;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+}
 div.preloader-container {
-  z-index: 99999;
   width: 60%;
   padding: 2rem;
   background: var(--white-bg);
