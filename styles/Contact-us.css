@@ -34,9 +34,7 @@ section.contact-us {
   -o-border-radius: 1rem;
 }
 .contact-form input:is(:focus-visible, :focus) {
-  border: 0;
   outline: 0;
-  border-bottom: 2px solid #333;
 }
 .contact-form > div.form-container > form input {
   border: 0;
@@ -48,6 +46,11 @@ section.contact-us {
   margin: 0.6rem auto;
   padding: 0.5rem 0.4rem;
   font-size: 1rem;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
 }
 .contact-form > div.form-container > form > button {
   margin: 1rem auto;
@@ -76,5 +79,10 @@ section.map-container {
   }
   .contact-form .form-container {
     width: 85dvw;
+    padding: 2rem 0.8rem;
+  }
+  .contact-form > div.form-container > form input,
+  .contact-form > div.form-container > form textarea {
+    width: 90%;
   }
 }
