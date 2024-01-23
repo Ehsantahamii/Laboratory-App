@@ -1,0 +1,96 @@
+div.preloader-container {
+  z-index: 99999;
+  width: 60%;
+  padding: 2rem;
+  background: var(--white-bg);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-width: 18.75rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+
+div.preloader-container > div {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+div.preloader-container > div > img {
+  width: 10.31rem;
+  margin: auto;
+}
+.snippet {
+  position: absolute;
+  top: 7rem;
+  left: 5rem;
+}
+
+.dot-fire {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9999px 22.5px 0 -5px #9880ff;
+  animation: dot-fire 1.5s infinite linear;
+  animation-delay: -0.85s;
+}
+.dot-fire::before,
+.dot-fire::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+}
+.dot-fire::before {
+  box-shadow: 9999px 22.5px 0 -5px #9880ff;
+  animation: dot-fire 1.5s infinite linear;
+  animation-delay: -1.85s;
+}
+.dot-fire::after {
+  box-shadow: 9999px 22.5px 0 -5px #9880ff;
+  animation: dot-fire 1.5s infinite linear;
+  animation-delay: -2.85s;
+}
+
+@media screen and (max-width: 480px) {
+  div.preloader-container {
+  }
+  div.preloader-container > div > img {
+    width: 6.31rem;
+  }
+  .snippet {
+    top: 4rem;
+    left: 5.5rem;
+  }
+}
+
+@keyframes dot-fire {
+  1% {
+    box-shadow: 9999px 22.5px 0 -5px #10355b;
+  }
+  50% {
+    box-shadow: 9999px -5.625px 0 2px rgba(16, 53, 91, 0.7);
+  }
+  100% {
+    box-shadow: 9999px -22.5px 0 -5px rgba(16, 53, 91, 0.5);
+  }
+}

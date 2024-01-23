@@ -37,6 +37,8 @@ $("#dark-btn").click(function () {
   $(".arrow-vector, .arrow-vector path").css("fill", "#fff");
   $(".hamburger-menu-btn svg path").css("fill", "#fff");
   $(".dark-night-mode").css({ "box-shadow": "unset", background: "#c7c7c7" });
+  $(".preloader-container").css("background", "rgba(0, 0, 0, 0.5)");
+
   $("#light-btn").toggleClass("active-mode");
   $("#dark-btn").removeClass("active-mode");
 });
@@ -47,6 +49,7 @@ $("#light-btn").click(function () {
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector , .tool-box button").css("color", "");
   $(".arrow-vector, .arrow-vector path").css("fill", "#333333");
   $(".dark-night-mode").css({ "box-shadow": "", background: "" });
+  $(".preloader-container").css("background", "");
   $(".hamburger-menu-btn svg path").css("fill", "");
   $("#dark-btn").toggleClass("active-mode");
   $("#light-btn").removeClass("active-mode");
@@ -85,8 +88,41 @@ $("#search-btn").click(function () {
   $(".search-bar input").css("width", "95%");
 });
 
-$("body, header , section").not($("#search-btn")).on("click", function (e) {
-  if (e.target !== this) return;
-  $(".search-bar").removeClass("open-search-box");
+$("body, header , section")
+  .not($("#search-btn"))
+  .on("click", function (e) {
+    if (e.target !== this) return;
+    $(".search-bar").removeClass("open-search-box");
+  });
+"body".not($("#menutop"));
+
+// dot-fire preloader
+const snippets = document.querySelectorAll(".snippet");
+
+for (let i = 0; i < snippets.length; i++) {
+  snippets[i].addEventListener("mouseleave", clearTooltip);
+  snippets[i].addEventListener("blur", clearTooltip);
+}
+
+function showTooltip(el, msg) {
+  el.setAttribute("class", "snippet tooltip");
+  el.setAttribute("aria-label", msg);
+}
+
+function clearTooltip(e) {
+  e.currentTarget.setAttribute("class", "snippet");
+  e.currentTarget.removeAttribute("aria-label");
+}
+
+const clipboardSnippets = new ClipboardJS(".snippet", {
+  text: (trigger) => trigger.getAttribute("data-title"),
 });
-("body").not($("#menutop"))
+
+clipboardSnippets.on("success", (e) => {
+  e.clearSelection();
+  showTooltip(e.trigger, "Copied!");
+});
+
+clipboardSnippets.on("error", (e) => {
+  showTooltip(e.trigger, "Copy failed!");
+});
