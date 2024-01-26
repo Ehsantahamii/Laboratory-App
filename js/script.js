@@ -88,6 +88,11 @@ $("#search-btn").click(function () {
   $(".search-bar input").css("width", "95%");
 });
 
+// show/hide result
+// $("#show-result").click(function () {
+//   $(".result-container").toggleClass("open");
+// });
+
 $("body, header , section")
   .not($("#search-btn"))
   .on("click", function (e) {

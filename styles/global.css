@@ -76,7 +76,7 @@ address {
 }
 .btn {
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
-  color: var(--black);
+  color: var(#fff);
   border-radius: 20px;
   font-size: 14px;
   font-style: normal;
@@ -105,7 +105,7 @@ address {
   flex-direction: column;
 }
 .open {
-  display: block;
+  display: block ;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
