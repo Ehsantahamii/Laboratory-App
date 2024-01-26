@@ -70,13 +70,16 @@ p {
 address {
   all: unset;
 }
+input:is(:focus-visible, :focus) {
+  outline: 0;
+}
 .dark-active {
   background: #3f3f3f !important;
   color: #fff !important;
 }
 .btn {
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
-  color: var(#fff);
+  color: #fff;
   border-radius: 20px;
   font-size: 14px;
   font-style: normal;
@@ -105,7 +108,7 @@ address {
   flex-direction: column;
 }
 .open {
-  display: block ;
+  display: block;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;

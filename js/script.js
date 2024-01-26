@@ -28,7 +28,7 @@ $("#closeMenu").click(function () {
 // dark / light
 $("#dark-btn").click(function () {
   $(
-    "body ,footer, nav, article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card ,.sample-card,.form-container,#closeMenu"
+    "body ,footer, nav, article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card ,.sample-card,.form-container,.consultation-form-container,#closeMenu"
   ).toggleClass("dark-active");
   $("h1 , h2, h3,h4,p , a, .arrow-vector , .tool-box button").css(
     "color",
@@ -44,7 +44,7 @@ $("#dark-btn").click(function () {
 });
 $("#light-btn").click(function () {
   $(
-    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card,.sample-card,.form-container,#closeMenu"
+    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card,.sample-card,.form-container,.consultation-form-container,#closeMenu"
   ).removeClass("dark-active");
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector , .tool-box button").css("color", "");
   $(".arrow-vector, .arrow-vector path").css("fill", "#333333");
@@ -89,9 +89,14 @@ $("#search-btn").click(function () {
 });
 
 // show/hide result
-// $("#show-result").click(function () {
-//   $(".result-container").toggleClass("open");
-// });
+$("#open-consultation").click(function () {
+  $(".consultation-form-container").toggleClass("show");
+  $(".consultation-form-container").toggleClass("scale-in-center");
+});
+$("#close-consultation").click(function () {
+  $(".consultation-form-container").removeClass("show");
+  $(".consultation-form-container").removeClass("scale-in-center");
+});
 
 $("body, header , section")
   .not($("#search-btn"))
