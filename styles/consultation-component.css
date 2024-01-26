@@ -6,6 +6,7 @@ div.consultation {
   bottom: 1rem;
   gap: 5px;
   opacity: 0.6;
+  color: var(--black);
 }
 div.consultation:hover {
   opacity: 1;

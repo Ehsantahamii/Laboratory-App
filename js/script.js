@@ -27,9 +27,11 @@ $("#closeMenu").click(function () {
 
 // dark / light
 $("#dark-btn").click(function () {
-  $(
-    "body ,footer, nav, article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card ,.sample-card,.form-container,.consultation-form-container,#closeMenu"
-  ).toggleClass("dark-active");
+  $(":root").css({
+    "--white-bg": "#333",
+    "--light-blue-bg": "#333",
+    "--black": "#fff",
+  });
   $("h1 , h2, h3,h4,p , a, .arrow-vector , .tool-box button").css(
     "color",
     "#fff"
@@ -43,9 +45,7 @@ $("#dark-btn").click(function () {
   $("#dark-btn").removeClass("active-mode");
 });
 $("#light-btn").click(function () {
-  $(
-    "body ,footer, nav ,article,.reservation,.guid-dropdown,.nav-container-mobile,swiper-slide,.blog-card,.sample-card,.form-container,.consultation-form-container,#closeMenu"
-  ).removeClass("dark-active");
+  $(":root").css({ "--white-bg": "", "--light-blue-bg": "", "--black": "" });
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector , .tool-box button").css("color", "");
   $(".arrow-vector, .arrow-vector path").css("fill", "#333333");
   $(".dark-night-mode").css({ "box-shadow": "", background: "" });

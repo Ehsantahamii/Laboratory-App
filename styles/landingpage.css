@@ -578,7 +578,7 @@ section.comments {
   align-items: center;
   justify-content: center;
   margin: 1rem 1.5rem;
-  background: #fff;
+  background: var(--white-bg);
   border-radius: 0.625rem;
   -webkit-border-radius: 0.625rem;
   -moz-border-radius: 0.625rem;
