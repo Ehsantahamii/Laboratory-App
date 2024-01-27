@@ -73,7 +73,7 @@ topBtn.on("click", function (e) {
 // accordion
 $("#guid-accordion").click(function () {
   $(".navbar-guid-accordions").toggleClass("accordions-open");
-  $("#guid-accordion img").toggleClass("rotate270");
+  $("#guid-accordion svg").toggleClass("rotate270");
 });
 
 // open/close samples category filter box

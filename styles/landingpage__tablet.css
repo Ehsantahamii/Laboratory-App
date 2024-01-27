@@ -96,6 +96,9 @@
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
   }
+  .guid-accordion-vector path {
+    fill: var(--black);
+  }
   .rotate270 {
     rotate: 270deg;
     transition: all 0.4s ease;

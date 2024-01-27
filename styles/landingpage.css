@@ -660,8 +660,11 @@ footer.footer {
 .footer .footer-side-3 > li {
   align-items: end;
 }
-.footer .footer-side-3 > li > img {
+.footer .footer-side-3 > li > svg {
   margin-left: 0.6rem;
+}
+.footer .footer-side-3 > li > svg path {
+  fill: var(--black);
 }
 .footer .developers {
   width: 100%;
