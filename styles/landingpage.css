@@ -478,6 +478,7 @@ section.our-team {
 
 .our-team ul.our-team-container > img:nth-child(1) {
   position: absolute;
+  left: 0;
   top: -6rem;
   animation: rotating360 20s infinite linear;
   -webkit-animation: rotating360 20s infinite linear;
