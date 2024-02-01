@@ -12,6 +12,7 @@
 :root {
   --white-bg: #fff;
   --light-blue-bg: #e1f4f5;
+  --consultation-bg: rgb(15, 53, 91);
   --black: #333;
 }
 
@@ -96,9 +97,11 @@ input:is(:focus-visible, :focus) {
 .btn > a {
   color: #fff;
 }
-.btn:hover.btn a,
 .btn:hover.btn {
-  color: #1671b9;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #0c2b49 0%, #0599be 100%, #0a3f6b 100%)
+  );
 }
 
 .flex-hz {

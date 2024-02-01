@@ -393,10 +393,18 @@ section.reservation {
   font-style: normal;
   font-weight: 700;
 }
+.reservation-container > div > .f-btn:hover {
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #0f355b 0%, #05cdff 100%, #1671b9 100%)
+  );
+
+}
 .reservation-container > div > img:nth-child(3) {
   display: none;
 }
-.reservation .reservation-btn {
+.reservation .reservation-btn,
+span.reservation-btn {
   color: #fff;
   width: 19.6rem;
   height: 3.1rem;
@@ -483,14 +491,13 @@ section.our-team {
 }
 .our-team ul.our-team-container > img:nth-child(3) {
   position: absolute;
-  top: 50%;
   left: 0;
   animation: rotating360 20s infinite linear;
   -webkit-animation: rotating360 20s infinite linear;
 }
 .our-team ul.our-team-container > img:nth-child(4) {
   position: absolute;
-  bottom: 0;
+  bottom: -5rem;
   left: 50%;
   animation: rotating30 6s infinite linear;
   -webkit-animation: rotating30 6s infinite linear;
@@ -647,18 +654,32 @@ footer.footer {
   font-weight: 600;
   line-height: normal;
 }
-.footer .footer-side-1 .enamad-box {
-  margin-top: 7.68rem;
+.footer .footer-side-1 {
+  gap: 2.5rem;
+}
+.footer .footer-side-1 .insurance-box {
+  /* margin-top: 7.68rem; */
   justify-content: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
+}
+.footer .footer-side-1 .instagram-box > a > img {
+  width: 5rem;
+  height: 5rem;
+}
+.footer .footer-side-1 .insurance-box > img:first-child {
+  width: 5rem;
+}
+.footer .footer-side-1 .insurance-box > img:nth-child(2),
+.footer .footer-side-1 .insurance-box > img:nth-child(3) {
+  width: 6rem;
 }
 .footer .footer-side-2 > li,
 .footer .footer-side-3 > li {
   margin: 1.87rem 0;
 }
 .footer .footer-side-3 > li {
-  align-items: end;
+  align-items: normal;
 }
 .footer .footer-side-3 > li > svg {
   margin-left: 0.6rem;

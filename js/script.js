@@ -46,7 +46,12 @@ $("#dark-btn").click(function () {
   $("#dark-btn").removeClass("active-mode");
 });
 $("#light-btn").click(function () {
-  $(":root").css({ "--white-bg": "", "--light-blue-bg": "", "--black": "" });
+  $(":root").css({
+    "--white-bg": "",
+    "--light-blue-bg": "",
+    "--black": "",
+    "--consultation-bg": "",
+  });
   $("h1 , h2, h3,h4 ,p , a, .arrow-vector , .tool-box button").css("color", "");
   $(".arrow-vector, .arrow-vector path").css("fill", "#333333");
   $(".dark-night-mode").css({ "box-shadow": "", background: "" });
