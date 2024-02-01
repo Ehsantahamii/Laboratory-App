@@ -484,14 +484,14 @@ section.our-team {
 }
 .our-team ul.our-team-container > img:nth-child(2) {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5rem;
   animation: movingY 6s infinite linear;
   -webkit-animation: movingY 6s infinite linear;
 }
 .our-team ul.our-team-container > img:nth-child(3) {
   position: absolute;
   left: 0;
+  bottom: -10rem;
   animation: rotating360 20s infinite linear;
   -webkit-animation: rotating360 20s infinite linear;
 }
