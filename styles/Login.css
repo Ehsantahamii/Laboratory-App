@@ -25,7 +25,7 @@ main.login-container {
   -ms-border-radius: 1.25rem;
   -o-border-radius: 1.25rem;
 }
-.login-container > a{
+.login-container > a {
   color: var(--black);
   margin-top: 0.6rem;
   justify-content: center;
@@ -33,7 +33,7 @@ main.login-container {
   gap: 0.2rem;
   opacity: 0.6;
 }
-.login-container > a:hover{
+.login-container > a:hover {
   opacity: 1;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -134,11 +134,8 @@ img.login-vector {
     width: 70%;
     height: 2.5rem;
   }
-  .login-inner-container > form > input{
-    font-size: 0.7rem;
+  .login-inner-container > button,
+  .login-inner-container > form > input {
+    font-size: 1rem;
   }
-  .login-inner-container > button {
-  font-size: 1rem;
-  }
-
 }

@@ -13,8 +13,11 @@ div.consultation:hover {
 }
 .consultation > svg {
   width: 4vw;
-  max-width: 5.25rem;
+  max-width: 4.375rem;
   min-width: 3rem;
+}
+.consultation > svg > path {
+  fill: var(--consultation-bg);
 }
 div.consultation-form-container {
   z-index: 999;
