@@ -31,6 +31,7 @@ $("#dark-btn").click(function () {
     "--white-bg": "#333",
     "--light-blue-bg": "#333",
     "--black": "#fff",
+    "--consultation-bg": "#e1f4f5",
   });
   $("h1 , h2, h3,h4,p , a, .arrow-vector , .tool-box button").css(
     "color",
